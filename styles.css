@@ -1,0 +1,33 @@
+body {
+    font-family: Tahoma, sans-serif;
+    direction: rtl;
+    padding: 20px;
+    background: #f8f8f8;
+}
+.product, .cart-item {
+    border: 1px solid #ccc;
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+button {
+    background: teal;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background: darkcyan;
+}
+.cart-link {
+    display: inline-block;
+    margin-top: 20px;
+    background: orange;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
