@@ -24,3 +24,13 @@ function displayCart() {
         </div>
     `).join("");
 }
+function removeFromCart(id) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    // حذف اولین محصولی که id ش با id ورودی برابر است
+    const index = cart.findIndex(item => item.id === id);
+    if (index !== -1) {
+        cart.splice(index, 1);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        displayCart(); // بروزرسانی نمایش سبد
+    }
+}
